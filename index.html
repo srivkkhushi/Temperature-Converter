@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Temperature Converter</title>
+</head>
+<body>
+    <main class="container">
+        <h1>Temperature Converter</h1>
+        <form id="tempConverterForm">
+            <fieldset>
+                <div>
+                    <label for="tempInput">Enter the temperature to convert:</label>
+                    <input type="number" name="tempInput" id="tempInput" value="0">
+                </div>
+                <div>
+                    <label for="unitSelect">Choose a unit:</label>
+                    <select name="unitSelect" id="unitSelect">
+                        <option value="cel" selected>&#176;Celsius</option>
+                        <option value="fah">&#176;Fahrenheit</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="submit" value="Convert" id="convertButton">
+                    <button type="button" id="clearButton">Clear</button>
+                </div>
+            </fieldset>
+        </form>
+        <div id="result" aria-live="polite"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
